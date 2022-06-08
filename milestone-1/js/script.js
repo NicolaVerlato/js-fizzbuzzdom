@@ -4,13 +4,13 @@
 
 for(let i = 1; i <= 100; i++) {
     let multipli = i;
-    if (i % 3 === 0) {
+    
+    if ( (i % 3 === 0) && (i % 5 === 0) ) {
+        multipli = 'Fizz' + 'Buzz';
+    } else if (i % 3 === 0) {
         multipli = 'Fizz';
     } else if (i % 5 === 0) {
         multipli = 'Buzz';
     } 
-    if ( (i % 3 === 0) && (i % 5 === 0) ) {
-        multipli = 'Fizz' + 'Buzz';
-    }
     console.log(multipli);
 }

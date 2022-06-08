@@ -8,16 +8,16 @@ const squareContainer = document.querySelector('.square-container');
 for(let i = 1; i <= 100; i++) {
     let multipli = i;
     let color;
-    if (i % 3 === 0) {
+     
+    if ( (i % 3 === 0) && (i % 5 === 0) ) {
+        multipli = 'Fizz' + 'Buzz';
+        color = 'red';
+    } else if (i % 3 === 0) {
         multipli = 'Fizz';
         color = 'green';
     } else if (i % 5 === 0) {
         multipli = 'Buzz';
         color = 'yellow';
-    } 
-    if ( (i % 3 === 0) && (i % 5 === 0) ) {
-        multipli = 'Fizz' + 'Buzz';
-        color = 'red';
     }
 
     // creazione square
